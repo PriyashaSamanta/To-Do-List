@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  background: linear-gradient(135deg, #eac3e5, #d7d0d6);
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 30px;
+}
+
+#container {
+  background-color: white;
+  padding: 40px 50px;
+  border-radius: 20px;
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.2);
+  width: 100%;
+  max-width: 500px;
+  text-align: center;
+  transition: 0.3s ease-in-out;
+}
+
+h1 {
+  font-size: 35px;
+  margin-bottom: 30px;
+  color: #B33791;
+  font-weight: 800;
+}
+
+#todo-input {
+  width: 76%;
+  padding: 12px;
+  border: 2px solid #8e7dff;
+  border-radius: 10px;
+  outline: none;
+  font-size: 16px;
+  transition: all 0.3s ease;
+  background-color: #FEC5F6;
+  color: #B33791;
+}
+
+#todo-input:focus {
+  border-color: #B33791;
+  box-shadow: 0 0 6px rgba(129, 33, 124, 0.5);
+}
+
+#addbtn {
+  padding: 12px 20px;
+  margin-left: 12px;
+  background: linear-gradient(135deg, #B33791, #C562AF);
+  color: white;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 15px;
+  transition: background 0.3s ease;
+}
+
+#addbtn:hover {
+  background: linear-gradient(135deg, #C562AF,#B33791);
+}
+
+#todo-items {
+  list-style: none;
+  margin-top: 30px;
+  text-align: left;
+  max-height: 200px;
+  overflow-y: auto;
+  padding-right: 5px;
+}
+#todo-items li {
+  background-color: #ffd5f6;
+  padding: 6px 10px; /* Compact padding */
+  margin-bottom: 10px;
+  border-radius: 8px;
+  display: flex;
+  justify-content: space-between;
+  color: #d63384;
+  align-items: center;
+  font-size: 16px;
+  line-height: 1; /* Reduces vertical spacing */
+  border-left: 4px solid #d63384;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+  max-height: 40px;
+  max-width:95%;
+  margin-left: 10px;
+}
+
+
+
+#todo-items li:hover {
+  transform: scale(1.01);
+  background-color: #DB8DD0;
+  color: white;
+}
+
+#del-all {
+  margin-top: 25px;
+  width: 95%;
+  padding: 12px;
+  background-color: #C562AF;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  font-weight: bold;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+#del-all:hover {
+  background-color: #B33791;
+}
